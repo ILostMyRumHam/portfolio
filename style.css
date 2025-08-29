@@ -1,8 +1,9 @@
 
 :root {
   --daymode: #e4e4e4;
-  --nightmode: #191946;
+  --nightmode: #111120;
   --currentmode: #e4e4e4
+  --headers: darkorange
 }
 
 aside1 {
@@ -22,8 +23,8 @@ aside1 {
   background: linear-gradient(to right, blue, pink);
 }
 
-h1 {
-  color: rgb(76, 185, 43);
+header {
+  color: darkorange;
   text-align: center;
 }
 
@@ -31,18 +32,19 @@ body {
   background-color: var(--nightmode);
   text-align: center;
   color: var(--daymode);
-  font-size: 18px;
-  
+  font-size: 14px;
+  text-shadow: sandybrown 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
 }
 
 a:link {
-  color: rgb(155, 32, 212);
+  color: forestgreen;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(155, 32, 212);
+  color: forestgreen;
   background-color: transparent;
   text-decoration: none;
 }

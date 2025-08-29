@@ -19,18 +19,17 @@
 <div>
     <header>
     <h1>Bio</h1>
-
+    </header>
     <p> Hi, my name is Ondrej and I like making new things based on old ideas lying around my head. </p>
     <br>
     <p> My interests include illustration, skipping rope, and drawing a bath with rubber ducks. </p>
 
-    </header>
 </div>
 
 <div>
     <header>
     <h1>Creations</h1>
-
+    </header>
     <div>   
     <a href="https://cara.app/jiskra" title="Visit my online portfolio: https://cara.app/jiskra">
     Concept Art Portfolio </a>
@@ -40,20 +39,19 @@
     <a href="https://github.com/ILostMyRumHam" title="Check out my github profile: https://github.com/ILostMyRumHam">
     Github</a>
     </div>
-    </header>
 </div>
 
 <div>
     <header>
     <h1>Contact</h1>
-    <p> Email: jiskraspark@gmail.com</p>
-    <p> Cara: @jiskra</p>
-
     </header>
+    <p> Business email: <br/> jiskraspark@gmail.com <br/></p>
+    <p> Personal email: <br/> ondrejfest@gmail.com </p>
 </div>
 <div>
     <header>
         <h1>Collaborations</h1>
+    </header>
     <div>
         <div class="multiline">
         <a href="https://computersforsocialchange.org/" title="Closing the digital divide: https://computersforsocialchange.org/">Computers for social change<br></a>
@@ -74,28 +72,38 @@
         Donate to the 'Empower Her' fundraiser</a>
         </div>
     </div>
-    </header>
 </div>
 
 <SCRIPT>
 function check_colour(mode){
-console.log(mode)
+let headers = document.querySelectorAll("header")
+let links = document.querySelectorAll("a:link")
+let links_visited = document.querySelectorAll("a:visited")
+
+
     if (mode){
         if (mode === "Day Mode"){
             document.body.style.backgroundColor = '#e4e4e4';
-            document.body.style.color = '#191946';
+            document.body.style.color = '#111120';
+            document.body.style.textShadow = 'sandybrown';
+
+            headers.forEach(header => header.style.color = 'forestgreen')
+            links.forEach(link => link.style.color = 'darkorange')
 
         }else if (mode === "Night Mode"){
-            document.body.style.backgroundColor = '#191946';
+            document.body.style.backgroundColor = '#111120';
             document.body.style.color = '#e4e4e4';
+            document.body.style.textShadow = 'sandybrown';
+
+            headers.forEach(header => header.style.color = 'darkorange')
+            links.forEach(link => link.style.color = 'forestgreen')
 
         }else{
             document.body.style.backgroundColor = "#e4e4e4";
-            document.body.style.color = '#191946';
+            document.body.style.color = '#111120';
         }
     }
 }
-
 
 </SCRIPT>
 
