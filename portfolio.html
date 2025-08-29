@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<TITLE>Online Portfolio</TITLE>
+<link rel="stylesheet" href="style.css">
+<SCRIPT LANGUAGE="JavaScript">
+
+</SCRIPT>
+
+
+<div class="button_div">
+    <input type="radio" name="Mode" value="Day Mode" onClick="check_colour('Day Mode')" title="Switch to day mode"/>
+    <input type="radio" name="Mode" value="Night Mode" checked="checked" onClick="check_colour('Night Mode')" title="Switch to night mode"/>
+</div>
+
+
+</HEAD>
+
+<BODY>
+<div>
+    <header>
+    <h1>Bio</h1>
+
+    <p> Hi, my name is Ondrej and I like making new things based on old ideas lying around my head. </p>
+    <br>
+    <p> My interests include illustration, skipping rope, and drawing a bath with rubber ducks. </p>
+
+    </header>
+</div>
+
+<div>
+    <header>
+    <h1>Creations</h1>
+
+    <div>   
+    <a href="https://cara.app/jiskra" title="Visit my online portfolio: https://cara.app/jiskra">
+    Concept Art Portfolio </a>
+    </div> 
+    <br>
+    <div>
+    <a href="https://github.com/ILostMyRumHam" title="Check out my github profile: https://github.com/ILostMyRumHam">
+    Github</a>
+    </div>
+    </header>
+</div>
+
+<div>
+    <header>
+    <h1>Contact</h1>
+    <p> Email: jiskraspark@gmail.com</p>
+    <p> Cara: @jiskra</p>
+
+    </header>
+</div>
+<div>
+    <header>
+        <h1>Collaborations</h1>
+    <div>
+        <div class="multiline">
+        <a href="https://computersforsocialchange.org/" title="Closing the digital divide: https://computersforsocialchange.org/">Computers for social change<br></a>
+        is a non-profit, community-based organization dedicated to closing the digital divide by providing access to
+        computers, technology, and digital skills training to under-resourced schools and communities.
+        </div>
+    </div>
+    <div>
+        <div class="multiline">
+        <a href="https://hopegclm.com/" title="Empowering Sustainable Change: https://hopegclm.com/">Hope G.C.L.M<br></a>
+        is a Canada-based non-profit that is currently raising funds for women in Congo who endure
+        war, poverty, child marriage, widowhood, and abandonment.
+
+        </div>
+
+        <div>
+        <a href="https://www.gofundme.com/f/rn39xu-empower-her?" title="Gofundme campaign: https://www.gofundme.com">
+        Donate to the 'Empower Her' fundraiser</a>
+        </div>
+    </div>
+    </header>
+</div>
+
+<SCRIPT>
+function check_colour(mode){
+console.log(mode)
+    if (mode){
+        if (mode === "Day Mode"){
+            document.body.style.backgroundColor = '#e4e4e4';
+            document.body.style.color = '#191946';
+
+        }else if (mode === "Night Mode"){
+            document.body.style.backgroundColor = '#191946';
+            document.body.style.color = '#e4e4e4';
+
+        }else{
+            document.body.style.backgroundColor = "#e4e4e4";
+            document.body.style.color = '#191946';
+        }
+    }
+}
+
+
+</SCRIPT>
+
+</BODY>
+
+</HTML>
